@@ -1,0 +1,190 @@
+{
+ "data": {
+  "rows": 964991,
+  "from": "2026-02-01 00:03:47",
+  "to": "2026-05-01 00:48:08",
+  "riders": 132035
+ },
+ "ride_probability": {
+  "train_rows": 1616856,
+  "test_rows": 1653080,
+  "test_pos_rate": 0.0459,
+  "auc": 0.8687,
+  "pr_auc": 0.4397,
+  "baseline_auc_n_cell": 0.813,
+  "baseline_pr_auc_n_cell": 0.3788,
+  "band_call": {
+   "share": 0.0112,
+   "actual_rate": 0.7851
+  },
+  "band_maybe": {
+   "share": 0.0199,
+   "actual_rate": 0.4025
+  },
+  "band_transit": {
+   "share": 0.9689,
+   "actual_rate": 0.0301
+  },
+  "top_features": [
+   [
+    "這個時段去這裡的次數",
+    0.35
+   ],
+   [
+    "去這裡的總次數",
+    0.205
+   ],
+   [
+    "這個時段叫車的次數",
+    0.074
+   ],
+   [
+    "這個時段占你叫車的比例",
+    0.072
+   ],
+   [
+    "上次去這裡是幾天前",
+    0.057
+   ]
+  ],
+  "auc_by_poi": {
+   "0": 0.8645,
+   "1": 0.822,
+   "2": 0.7998,
+   "3": 0.8243,
+   "4": 0.8631,
+   "5": 0.8756,
+   "6": 0.8778,
+   "7": 0.8797
+  }
+ },
+ "wait_time": {
+  "train_rows": 621611,
+  "test_rows": 342309,
+  "mae": 2.999,
+  "median_ae": 1.867,
+  "within_2min": 0.529,
+  "within_3min": 0.7052,
+  "test_mean": 7.018,
+  "mape": 0.5953,
+  "baseline_mae_global_median": 3.08,
+  "baseline_mae_zone_hour_median": 2.987,
+  "no_live": {
+   "train_rows": 621611,
+   "test_rows": 342309,
+   "mae": 3.024,
+   "median_ae": 1.859,
+   "within_2min": 0.5309,
+   "within_3min": 0.7054,
+   "test_mean": 7.018,
+   "mape": 0.5935
+  },
+  "excluded_over_cap": 375
+ },
+ "travel_time": {
+  "train_rows": 619963,
+  "test_rows": 341206,
+  "mae": 2.855,
+  "median_ae": 1.904,
+  "within_2min": 0.5201,
+  "within_3min": 0.6876,
+  "test_mean": 15.665,
+  "mape": 0.2315,
+  "baseline_mae_distance_linear": 4.385
+ },
+ "habit": {
+  "train_rows": 83314,
+  "test_rows": 58963,
+  "test_pos_rate": 0.3701,
+  "test_riders": 11689,
+  "auc": 0.6986,
+  "pr_auc": 0.5703,
+  "baseline_auc_weeks": 0.6291,
+  "baseline_pr_auc_weeks": 0.4726,
+  "calibration": {
+   "0.8-1.01": {
+    "share": 0.0123,
+    "mean_conf": 0.8355,
+    "actual_rate": 0.7752
+   },
+   "0.6-0.8": {
+    "share": 0.1243,
+    "mean_conf": 0.6845,
+    "actual_rate": 0.6472
+   },
+   "0.4-0.6": {
+    "share": 0.2402,
+    "mean_conf": 0.4911,
+    "actual_rate": 0.4803
+   },
+   "0.2-0.4": {
+    "share": 0.3859,
+    "mean_conf": 0.2917,
+    "actual_rate": 0.3172
+   },
+   "0-0.2": {
+    "share": 0.2372,
+    "mean_conf": 0.1465,
+    "actual_rate": 0.1782
+   }
+  },
+  "band_push": {
+   "share": 0.0595,
+   "actual_rate": 0.7175,
+   "within30": 0.6844,
+   "within15": 0.6198,
+   "median_diff": 3.5,
+   "per_week": 1170,
+   "riders_per_week": 423
+  },
+  "band_app": {
+   "share": 0.3173,
+   "actual_rate": 0.5126,
+   "within30": 0.462,
+   "within15": 0.3867,
+   "median_diff": 6.0,
+   "per_week": 6237,
+   "riders_per_week": 2606
+  },
+  "band_quiet": {
+   "share": 0.6231,
+   "actual_rate": 0.2643,
+   "within30": 0.2194,
+   "within15": 0.1692,
+   "median_diff": 9.0,
+   "per_week": 12247,
+   "riders_per_week": 7725
+  },
+  "by_weeks": {
+   "2": 0.2875,
+   "3": 0.5256,
+   "4": 0.669
+  },
+  "top_features": [
+   [
+    "同路線搭過幾次",
+    0.434
+   ],
+   [
+    "4 週裡出現幾週",
+    0.114
+   ],
+   [
+    "時間穩不穩",
+    0.07
+   ],
+   [
+    "星期幾",
+    0.065
+   ],
+   [
+    "距離",
+    0.056
+   ]
+  ],
+  "regular_riders": {
+   "riders_5plus": 43699,
+   "with_3week_pattern": 9438
+  }
+ }
+}

@@ -1,0 +1,27 @@
+# dependencies / build
+node_modules/
+dist/
+*.tsbuildinfo
+.vite/
+
+# test output
+test-results/
+playwright-report/
+
+# macOS
+.DS_Store
+
+# python
+__pycache__/
+*.pyc
+.venv/
+
+# 非 app 檔案（簡報素材、影片、文件），只留在本機
+deck/
+demo_video/
+REQUIREMENTS.md
+design.md
+題目.md
+和泰模板.key
+.claude/
+yoxi_data/
